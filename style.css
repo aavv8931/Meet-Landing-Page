@@ -3,39 +3,43 @@ body {
     font-family: "Red Hat Display";
 }
 
-h1{
+/* Global Styles */
+
+/* Header */
+h1 {
     color: #28283D;
 }
 
-p{
+p {
     color: #87879D;
 
 }
 
-.btn{
+.btn {
     border-radius: 29px;
     color: #FFFFFF;
 }
 
-.download{
+.download {
     width: 193px;
     height: 58px;
     background-color: #4D96A9;
-    
+
 }
 
-span{
+span {
     color: #8FE3F9;
 }
 
-.info-btn{
+.info-btn {
     width: 139px;
     height: 58px;
     background-color: #855FB1;
-    
+
 }
 
-.download:hover, .info-btn:hover{
+.download:hover,
+.info-btn:hover {
     cursor: grab;
     color: #FFFFFF;
 }
@@ -52,14 +56,26 @@ span{
     background: url(assets/desktop/image-hero-right.png) no-repeat;
 }
 
+
+
+/* Media Queries styles */
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    
+}
+
 /* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
 
     /* Header */
+    #header {
+        margin-bottom: 122px;
+    }
+
     #logo {
         width: 119px;
         height: 28px;
-        margin: 80px auto 60px ;
+        margin: 80px auto 60px;
     }
 
     .hero-left {
@@ -79,12 +95,12 @@ span{
     .content {
         width: 33.34%;
         height: 304px;
-        margin:  0px;
+        margin: 0px;
         text-align: center;
         padding-top: 43px;
     }
 
-    .content > h1{
+    .content>h1 {
         font-weight: 900;
         font-size: 64px;
         line-height: 64px;
@@ -93,7 +109,7 @@ span{
         margin-bottom: 34px;
     }
 
-    .content > p{
+    .content>p {
         font-weight: 500;
         font-size: 18px;
         line-height: 26px;
@@ -104,16 +120,43 @@ span{
         margin-bottom: 32px;
     }
 
-    .download:hover{
+    .download:hover {
         background-color: #71C0D4;
     }
 
-    .info-btn{
+    .info-btn {
         margin-left: 25px;
     }
 
-    .info-btn:hover{
+    .info-btn:hover {
         background-color: #B18BDD;
+    }
+
+    /* Division Section */
+
+    .circle>p {
+        font-size: 18px;
+        line-height: 26px;
+        text-align: center;
+        margin: 13px 0 0 0;
+
+    }
+
+    /* Division section */
+
+    .line {
+        border-left: 1px solid #87879D;
+        height: 84px;
+        opacity: 0.25;
+        margin: 0 719.5px;
+    }
+
+    .circle {
+        border: 1px solid rgba(135, 135, 157, 0.25);
+        border-radius: 29px;
+        width: 56px;
+        height: 56px;
+        margin: 0 692px;
     }
 
 }
