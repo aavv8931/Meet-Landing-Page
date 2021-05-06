@@ -35,6 +35,11 @@ span{
     
 }
 
+.download:hover, .info-btn:hover{
+    cursor: grab;
+    color: #FFFFFF;
+}
+
 #logo {
     background: url(assets/logo.svg);
 }
@@ -99,8 +104,16 @@ span{
         margin-bottom: 32px;
     }
 
+    .download:hover{
+        background-color: #71C0D4;
+    }
+
     .info-btn{
         margin-left: 25px;
+    }
+
+    .info-btn:hover{
+        background-color: #B18BDD;
     }
 
 }
