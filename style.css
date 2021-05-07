@@ -56,6 +56,26 @@ span {
     background: url(assets/desktop/image-hero-right.png) no-repeat;
 }
 
+/* Section */
+
+/* Group imgs */
+
+.woman-videocall{
+    background: url(assets/desktop/image-woman-in-videocall.jpg);
+}
+
+.women-videochatting{
+    background: url(assets/desktop/image-women-videochatting.jpg);
+}
+
+.men-meeting{
+    background: url(assets/desktop/image-men-in-meeting.jpg);
+}
+
+.man-texting{
+    background: url(assets/desktop/image-man-texting.jpg);
+}
+
 
 
 /* Media Queries styles */
@@ -68,6 +88,7 @@ span {
 @media (min-width: 1400px) {
     body{
         background-color: #000000;
+        overflow-x: hidden;
     }
     .container-fluid{
         width: 1440px;
@@ -161,7 +182,44 @@ span {
         border-radius: 29px;
         width: 56px;
         height: 56px;
-        margin: 0 692px;
+        margin: 0 692px 80px;
+    }
+
+    /* Section */
+
+    #section{
+      margin-top: ;  
+    }
+
+    .group-imgs{
+        height: 242px;
+        width: 1110px;
+        margin: 0 auto 80px;
+    }
+    .woman-videocall{
+        width: 255px;
+        height: 242px;
+        background-size: 100% 100%;
+    }
+
+    .women-videochatting{
+        width: 255px;
+        height: 242px;
+        margin: 0 15px 0 30px;
+        background-size: 100% 100%;
+    }
+
+    .men-meeting{
+        width: 255px;
+        height: 242px;
+        margin: 0 30px 0 15px;
+        background-size: 100% 100%;
+    }
+
+    .man-texting{
+        width: 255px;
+        height: 242px;
+        background-size: 100% 100%;
     }
 
 }
