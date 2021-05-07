@@ -10,9 +10,27 @@ h1 {
     color: #28283D;
 }
 
+h2{
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 44px;
+    text-align: center;
+    color: #28283d;
+}
+
 p {
     color: #87879D;
 
+}
+
+.mini-title{
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 4px;
+    color: #4D96A9;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 .btn {
@@ -75,6 +93,8 @@ span {
 .man-texting{
     background: url(assets/desktop/image-man-texting.jpg);
 }
+
+
 
 
 
@@ -222,4 +242,24 @@ span {
         background-size: 100% 100%;
     }
 
+    .mini-title{
+        height: 26px;
+        margin: 0 auto 18px;
+    }
+
+    .description>h2{
+        width: 422px;
+        height: 88px;
+        margin: 0 auto 32px;
+    }
+
+    .mini-description{
+        width: 525px;
+        height: 78px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 26px;
+        text-align: center;
+        margin: 0 auto 72px;
+    }
 }
