@@ -41,7 +41,7 @@ p {
 .download {
     width: 193px;
     height: 58px;
-    background-color: #4D96A9;
+    
 
 }
 
@@ -94,7 +94,18 @@ span {
     background: url(assets/desktop/image-man-texting.jpg);
 }
 
+.two{
+    margin-bottom: 0;
+}
 
+/* Footer */
+
+#footer{
+    background: url(assets/desktop/image-footer.jpg);
+    background-color: #4D96A9;
+    background-blend-mode: multiply;
+    
+}
 
 
 
@@ -166,6 +177,10 @@ span {
         margin: 0 auto 32px;
     }
 
+    .download{
+        background-color: #4D96A9;
+    }
+
     .download:hover {
         background-color: #71C0D4;
     }
@@ -180,11 +195,11 @@ span {
 
     /* Division Section */
 
-    .circle>p {
+    .circle-1>p, .circle-2>p {
         font-size: 18px;
         line-height: 26px;
         text-align: center;
-        margin: 13px 0 0 0;
+        margin: 14px 0 0 0;
 
     }
 
@@ -197,12 +212,16 @@ span {
         margin: 0 719.5px;
     }
 
-    .circle {
+    .circle-1{
+        margin: 0 692px 80px;
+    }
+
+    .circle-1, .circle-2 {
         border: 1px solid rgba(135, 135, 157, 0.25);
         border-radius: 29px;
         width: 56px;
         height: 56px;
-        margin: 0 692px 80px;
+        
     }
 
     /* Section */
@@ -261,5 +280,63 @@ span {
         line-height: 26px;
         text-align: center;
         margin: 0 auto 72px;
+    }
+
+    .circle-2{
+        margin: 0 692px -30px;
+        background-color: #FFFFFF;
+        z-index: 10;
+        position: absolute;
+    }
+
+    /* Footer */
+
+    #footer{
+        position: relative;
+        height: 308px;
+        width: 1440px;
+        margin-top: 26px;
+    }
+
+    .footer-info{
+        width: 1110px;
+        margin: 116px auto 104px;
+        
+    }
+
+    .footer-header>h2{
+        color: #FAFAFA;
+        width: 350px;
+        height: 88px;
+        text-align: left;
+    } 
+
+    .footer-description{
+        margin: 0 79px 0 80px;
+        
+    }
+
+    .footer-description>p{
+        color: #FAFAFA;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .footer-download{
+        width: 193px;
+        height: 58px;
+    }
+
+    .footer-download>button{
+        background-color: #855FB1;
+    }
+
+    .footer-span{
+        color: #D9B8FF;
+    }
+
+    .footer-download>button:hover{
+        background-color: #b18bdd;
     }
 }
