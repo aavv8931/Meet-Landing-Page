@@ -112,7 +112,216 @@ span {
 /* Media Queries styles */
 /* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-    
+    /* Header */
+    #header {
+        margin-bottom: 122px;
+    }
+
+    #logo {
+        width: 119px;
+        height: 28px;
+        margin: 80px auto 60px;
+    }
+
+    .hero-left {
+        width: 33.33%;
+        height: 303px;
+        padding-left: 0;
+    }
+
+    .hero-right {
+        width: 33.33%;
+        height: 303px;
+        padding-right: 0;
+        background-position: right;
+        margin-top: 43px;
+    }
+
+    .content {
+        width: 33.34%;
+        height: 304px;
+        margin: 0px;
+        text-align: center;
+        padding-top: 43px;
+    }
+
+    .content>h1 {
+        font-weight: 900;
+        font-size: 64px;
+        line-height: 64px;
+        width: 445px;
+        height: 128;
+        margin: 0 auto 34px;
+    }
+
+    .content>p {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 26px;
+        width: 540px;
+        height: 52px;
+        text-align: center;
+        margin: 0 auto 32px;
+    }
+
+    .download{
+        background-color: #4D96A9;
+    }
+
+    .download:hover {
+        background-color: #71C0D4;
+    }
+
+    .info-btn {
+        margin-left: 25px;
+    }
+
+    .info-btn:hover {
+        background-color: #B18BDD;
+    }
+
+    /* Division Section */
+
+    .circle-1>p, .circle-2>p {
+        font-size: 18px;
+        line-height: 26px;
+        text-align: center;
+        margin: 14px 0 0 0;
+
+    }
+
+    /* Division section */
+
+    .line {
+        border-left: 1px solid #87879D;
+        height: 84px;
+        opacity: 0.25;
+        margin: 0 719.5px;
+    }
+
+    .circle-1{
+        margin: 0 692px 80px;
+    }
+
+    .circle-1, .circle-2 {
+        border: 1px solid rgba(135, 135, 157, 0.25);
+        border-radius: 29px;
+        width: 56px;
+        height: 56px;
+        
+    }
+
+    /* Section */
+
+    .group-imgs{
+        height: 242px;
+        width: 1110px;
+        margin: 0 auto 80px;
+    }
+    .woman-videocall{
+        width: 255px;
+        height: 242px;
+        background-size: 100% 100%;
+    }
+
+    .women-videochatting{
+        width: 255px;
+        height: 242px;
+        margin: 0 15px 0 30px;
+        background-size: 100% 100%;
+    }
+
+    .men-meeting{
+        width: 255px;
+        height: 242px;
+        margin: 0 30px 0 15px;
+        background-size: 100% 100%;
+    }
+
+    .man-texting{
+        width: 255px;
+        height: 242px;
+        background-size: 100% 100%;
+    }
+
+    .mini-title{
+        height: 26px;
+        margin: 0 auto 18px;
+    }
+
+    .description>h2{
+        width: 422px;
+        height: 88px;
+        margin: 0 auto 32px;
+    }
+
+    .mini-description{
+        width: 525px;
+        height: 78px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 26px;
+        text-align: center;
+        margin: 0 auto 72px;
+    }
+
+    .circle-2{
+        margin: 0 692px -30px;
+        background-color: #FFFFFF;
+        z-index: 10;
+        position: absolute;
+    }
+
+    /* Footer */
+
+    #footer{
+        position: relative;
+        height: 308px;
+        width: 1440px;
+        margin-top: 26px;
+    }
+
+    .footer-info{
+        width: 1110px;
+        margin: 116px auto 104px;
+        
+    }
+
+    .footer-header>h2{
+        color: #FAFAFA;
+        width: 350px;
+        height: 88px;
+        text-align: left;
+    } 
+
+    .footer-description{
+        margin: 0 79px 0 80px;
+        
+    }
+
+    .footer-description>p{
+        color: #FAFAFA;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .footer-download{
+        width: 193px;
+        height: 58px;
+    }
+
+    .footer-download>button{
+        background-color: #855FB1;
+    }
+
+    .footer-span{
+        color: #D9B8FF;
+    }
+
+    .footer-download>button:hover{
+        background-color: #b18bdd;
+    }
 }
 
 /* XX-Large devices (larger desktops, 1400px and up) */
@@ -225,10 +434,6 @@ span {
     }
 
     /* Section */
-
-    #section{
-      margin-top: ;  
-    }
 
     .group-imgs{
         height: 242px;
