@@ -111,6 +111,12 @@ span {
 
 /* Media Queries styles */
 
+/* Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) {
+
+ }
+
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
     /* Header */
@@ -327,6 +333,10 @@ span {
 
 /* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+    body{
+        overflow-x: hidden;
+    }
+
     /* Header */
     #header {
         margin-bottom: 122px;
@@ -342,6 +352,7 @@ span {
         width: 33.33%;
         height: 303px;
         padding-left: 0;
+        background-size: 80%;
     }
 
     .hero-right {
@@ -350,6 +361,7 @@ span {
         padding-right: 0;
         background-position: right;
         margin-top: 43px;
+        background-size: 80%;
     }
 
     .content {
@@ -362,18 +374,18 @@ span {
 
     .content>h1 {
         font-weight: 900;
-        font-size: 64px;
-        line-height: 64px;
-        width: 445px;
+        font-size: 58px;
+        line-height: 58px;
+        width: 400px;
         height: 128;
         margin: 0 auto 34px;
     }
 
     .content>p {
         font-weight: 500;
-        font-size: 18px;
+        font-size: 16px;
         line-height: 26px;
-        width: 540px;
+        width: 457px;
         height: 52px;
         text-align: center;
         margin: 0 auto 32px;
@@ -411,11 +423,11 @@ span {
         border-left: 1px solid #87879D;
         height: 84px;
         opacity: 0.25;
-        margin: 0 719.5px;
+        margin: 0 599.5px;
     }
 
     .circle-1{
-        margin: 0 692px 80px;
+        margin: 0 572px 80px;
     }
 
     .circle-1, .circle-2 {
@@ -471,17 +483,17 @@ span {
     }
 
     .mini-description{
-        width: 525px;
+        width: 573px;
         height: 78px;
         font-weight: 500;
-        font-size: 18px;
+        font-size: 16px;
         line-height: 26px;
         text-align: center;
         margin: 0 auto 72px;
     }
 
     .circle-2{
-        margin: 0 692px -30px;
+        margin: 0 572px -30px;
         background-color: #FFFFFF;
         z-index: 10;
         position: absolute;
@@ -492,25 +504,26 @@ span {
     #footer{
         position: relative;
         height: 308px;
-        width: 1440px;
+        width: 1200px;
         margin-top: 26px;
     }
 
     .footer-info{
-        width: 1110px;
-        margin: 116px auto 104px;
+        width: 1000px;
+        /* margin: 116px auto 104px; */
         
     }
 
     .footer-header>h2{
         color: #FAFAFA;
-        width: 350px;
+        width: 400px;
         height: 88px;
         text-align: left;
     } 
 
     .footer-description{
-        margin: 0 79px 0 80px;
+        width: 400px;
+        margin: 0 65px 0 80px;
         
     }
 
@@ -519,6 +532,7 @@ span {
         font-weight: 500;
         font-size: 18px;
         line-height: 26px;
+        margin: 0 40px;
     }
 
     .footer-download{
