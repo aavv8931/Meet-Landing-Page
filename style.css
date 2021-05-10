@@ -1,6 +1,7 @@
 body {
     background-color: #F2F2F2;
     font-family: "Red Hat Display";
+    overflow-x: hidden;
 }
 
 .container-fluid{
@@ -82,18 +83,22 @@ span {
 
 .woman-videocall{
     background: url(assets/desktop/image-woman-in-videocall.jpg);
+    border-radius: 8px;
 }
 
 .women-videochatting{
     background: url(assets/desktop/image-women-videochatting.jpg);
+    border-radius: 8px;
 }
 
 .men-meeting{
     background: url(assets/desktop/image-men-in-meeting.jpg);
+    border-radius: 8px;
 }
 
 .man-texting{
     background: url(assets/desktop/image-man-texting.jpg);
+    border-radius: 8px;
 }
 
 .two{
@@ -108,7 +113,7 @@ span {
     background-blend-mode: multiply;   
 }
 
-#footer.row{
+.row{
     --bs-gutter-x: 0;
 }
 
@@ -121,8 +126,9 @@ span {
 @media (min-width: 768px) {
 
     body{
-        width: 100%
-    };
+        width: 100%;
+        overflow-x: hidden;
+    }
     /* Header */
     #header {
         margin-bottom: 122px;
@@ -134,25 +140,22 @@ span {
         margin: 80px auto 60px;
     }
 
+    .infomation{
+        height: 350px;
+    }
+
     .hero-center{
         background: url(assets/tablet/image-hero.png);
-        width: 768px;
+        width: 100%;
         height: 303px;
+        background-size: 100% 100%;
+        margin: 0 0 43px 0 ;
     }
-
-    /* .hero-left {
-        display: none;
-    }
-
-    .hero-right {
-        display: none;
-    } */
 
     .content {
         width: 457;
         height: 262px;
         margin: 0px;
-        padding-top: 43px;
     }
 
     .content>h1 {
@@ -160,7 +163,7 @@ span {
         font-size: 48px;
         line-height: 48px;
         width: 339px;
-        height: 128;
+        height: 96px;
         margin: 0 auto 24px;
         text-align: center;
     }
@@ -191,6 +194,11 @@ span {
 
     /* Division Section */
 
+    .division{
+        width: 56px;
+        margin: 90px auto;
+    }
+
     .circle-1>p, .circle-2>p {
         font-size: 18px;
         line-height: 26px;
@@ -205,11 +213,11 @@ span {
         border-left: 1px solid #87879D;
         height: 84px;
         opacity: 0.25;
-        margin: 0 383.5px;
+        margin: 0 50%;
     }
 
     .circle-1{
-        margin: 0 356px 80px;
+        margin: 0 0 80px 0;
     }
 
     .circle-1, .circle-2 {
@@ -217,7 +225,13 @@ span {
         border-radius: 29px;
         width: 56px;
         height: 56px;
-        
+    }
+
+    .circle-2{
+        margin: 0;
+        background-color: #FFFFFF;
+        z-index: 10;
+        position: absolute;
     }
 
     /* Section */
@@ -225,7 +239,7 @@ span {
     .group-imgs{
         height: 156px;
         width: 701px;
-        margin: 0 40px 20px;
+        margin: 0 auto 30px;
     }
     .woman-videocall{
         width: 164px;
@@ -259,66 +273,72 @@ span {
     }
 
     .description>h2{
-        width: 573px;
+        width: 445px;
         height: 88px;
         margin: 0 auto 32px;
     }
 
     .mini-description{
-        width: 525px;
+        width: 573px;
         height: 78px;
         font-weight: 500;
-        font-size: 18px;
+        font-size: 16px;
         line-height: 26px;
         text-align: center;
-        margin: 0 auto 72px;
-    }
-
-    .circle-2{
-        margin: 0 356px -30px;
-        background-color: #FFFFFF;
-        z-index: 10;
-        position: absolute;
+        margin: 0 auto;
     }
 
     /* Footer */
 
     #footer{
+        background: url(assets/tablet/image-footer.jpg) no-repeat;
+        background-color: #4D96A9;
+        background-blend-mode: multiply;
         position: relative;
-        height: 308px;
-        width: 768px;
-        margin-top: 26px;
+        height: 428px;
+        width: 100%;
+        margin-top: -60px;
+        background-size: 100% 100%
     }
 
     .footer-info{
-        width: 
-        margin: 116px auto 104px;
+        width: 100%;
+        margin-top: 90px;
+        height: auto;
         
+    }
+
+    .footer-header{
+        margin: 0 auto;
     }
 
     .footer-header>h2{
         color: #FAFAFA;
-        width: 250px;
+        width: 457px;
         height: 88px;
-        text-align: left;
+        text-align: center;
+        margin: 0 auto 32px;
     } 
 
     .footer-description{
-        margin: 0 52px 0 113px;
+        margin: 0 52px 0 0;
         
     }
 
     .footer-description>p{
         color: #FAFAFA;
+        width: 573px;
         font-weight: 500;
         font-size: 18px;
         line-height: 26px;
+        margin: 0 auto;
+        text-align: center;
     }
 
     .footer-download{
         width: 193px;
         height: 58px;
-        margin-top: 25px;
+        margin: 25px auto 0;
     }
 
     .footer-download>button{
@@ -327,10 +347,6 @@ span {
 
     .footer-span{
         color: #D9B8FF;
-    }
-
-    .footer-download>button:hover{
-        background-color: #b18bdd;
     }
 
  }
