@@ -3,6 +3,10 @@ body {
     font-family: "Red Hat Display";
 }
 
+.container-fluid{
+    padding: 0
+}
+
 /* Global Styles */
 
 /* Header */
@@ -623,6 +627,7 @@ span {
 
     .download{
         background-color: #4D96A9;
+        margin: 0;
     }
 
     .download:hover {
@@ -630,7 +635,7 @@ span {
     }
 
     .info-btn {
-        margin-left: 25px;
+        margin: 0 0 0 25px;
     }
 
     .info-btn:hover {
@@ -671,6 +676,13 @@ span {
         width: 56px;
         height: 56px;
         
+    }
+
+    .circle-2{
+        margin: 0 0 -30px 0;
+        background-color: #FFFFFF;
+        z-index: 10;
+        position: absolute;
     }
 
     /* Section */
@@ -727,26 +739,27 @@ span {
         margin: 0 auto 72px;
     }
 
-    .circle-2{
-        margin: 0 572px -30px;
-        background-color: #FFFFFF;
-        z-index: 10;
-        position: absolute;
-    }
-
     /* Footer */
 
     #footer{
         position: relative;
         height: 308px;
-        width: 1200px;
+        width: 100%;
         margin-top: 26px;
+    }
+
+    #footer.row{
+        --bs-gutter-x: 0;
     }
 
     .footer-info{
         width: 1000px;
         /* margin: 116px auto 104px; */
         
+    }
+
+    .footer-header{
+        width: 350px;
     }
 
     .footer-header>h2{
@@ -758,7 +771,7 @@ span {
 
     .footer-description{
         width: 400px;
-        margin: 0 65px 0 80px;
+        margin: 0 0 0 44px;
         
     }
 
@@ -773,6 +786,7 @@ span {
     .footer-download{
         width: 193px;
         height: 58px;
+        margin: 0;
     }
 
     .footer-download>button{
