@@ -105,8 +105,11 @@ span {
 #footer{
     background: url(assets/desktop/image-footer.jpg);
     background-color: #4D96A9;
-    background-blend-mode: multiply;
-    
+    background-blend-mode: multiply;   
+}
+
+#footer.row{
+    --bs-gutter-x: 0;
 }
 
 
@@ -395,12 +398,16 @@ span {
         width: 350px;
         height: 52px;
         text-align: center;
-        margin: 0 auto 32px;
+        margin: 0 auto 39px;
+    }
+
+    .buttons{
+        margin: 0 auto;
     }
 
     .download{
         background-color: #4D96A9;
-        margin: 0 0 0 46px;
+        margin: 0;
     }
 
     .download:hover {
@@ -408,7 +415,7 @@ span {
     }
 
     .info-btn {
-        margin: 10px 0 0 40px;
+        margin-left: 20px;
     }
 
     .info-btn:hover {
@@ -416,6 +423,11 @@ span {
     }
 
     /* Division Section */
+
+    .division{
+        width: 56px;
+        margin: 0 auto;
+    }
 
     .circle-1>p, .circle-2>p {
         font-size: 18px;
@@ -425,25 +437,29 @@ span {
 
     }
 
-    /* Division section */
-
     .line {
         border-left: 1px solid #87879D;
         height: 84px;
         opacity: 0.25;
-        margin: 0 495.5px;
+        margin: 0 50%;
     }
 
     .circle-1{
-        margin: 0 468px 80px;
+        margin: 0 0 80px 0;
     }
 
     .circle-1, .circle-2 {
         border: 1px solid rgba(135, 135, 157, 0.25);
         border-radius: 29px;
         width: 56px;
-        height: 56px;
-        
+        height: 56px;   
+    }
+
+    .circle-2{
+        margin: 0 0 -30px 0;
+        background-color: #FFFFFF;
+        z-index: 10;
+        position: absolute;
     }
 
     /* Section */
@@ -500,37 +516,37 @@ span {
         margin: 0 auto 72px;
     }
 
-    .circle-2{
-        margin: 0 468px -30px;
-        background-color: #FFFFFF;
-        z-index: 10;
-        position: absolute;
-    }
+    
 
     /* Footer */
 
     #footer{
         position: relative;
         height: 308px;
-        width: 992px;
+        width: 100%;
         margin-top: 26px;
     }
 
     .footer-info{
-        width: 800px;
+        width: 900px;
         margin: 116px auto 104px;
         
     }
 
+    .footer-header{
+        width: 333.5px;
+    }
+
     .footer-header>h2{
         color: #FAFAFA;
-        width: 250px;
+        width: 333.5px;
         height: 88px;
         text-align: left;
     } 
 
     .footer-description{
-        margin: 0 52px 0 113px;
+        margin: 0 20px 0 44px;
+        width: 333.5px;
         
     }
 
@@ -544,7 +560,7 @@ span {
     .footer-download{
         width: 193px;
         height: 58px;
-        margin-top: 25px;
+        margin: 0;
     }
 
     .footer-download>button{
@@ -746,10 +762,6 @@ span {
         height: 308px;
         width: 100%;
         margin-top: 26px;
-    }
-
-    #footer.row{
-        --bs-gutter-x: 0;
     }
 
     .footer-info{
