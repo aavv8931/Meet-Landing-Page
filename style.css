@@ -113,6 +113,233 @@ span {
 
 /* Media Queries styles */
 
+/* Small devices (cellphones, 375px and up) */
+@media (min-width: 375px) {
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    #logo {
+        width: 119px;
+        height: 28px;
+        margin: 48px auto 54px;
+    }
+     
+    .information{
+
+    }
+
+    .hero-center {
+        background: url(assets/tablet/image-hero.png);
+        width: 100%;
+        height: 303px;
+        background-size: 100% 100%;
+        margin: 0 0 43px 0;
+    }
+
+    .content {
+        width: 457;
+        height: 355px;
+        margin: 0px;
+    }
+
+    .content>h1 {
+        font-weight: 900;
+        font-size: 40px;
+        line-height: 44px;
+        width: 327px;
+        height: 88px;
+        margin: 0 auto 24px;
+        text-align: center;
+    }
+
+    .content>p {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 26px;
+        width: 327px;
+        height: 78px;
+        text-align: center;
+        margin: 0 auto 32px;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        width: 193px;
+        margin: 0 auto;
+    }
+
+    .download {
+        background-color: #4D96A9;
+        width: 180px;
+    }
+
+    .info-btn {
+        margin: 16px 0 0 16px;
+    }
+
+    /* Division Section */
+
+    .division {
+        width: 56px;
+        margin: 90px auto;
+    }
+
+    .circle-1>p,
+    .circle-2>p {
+        font-size: 18px;
+        line-height: 26px;
+        text-align: center;
+        margin: 14px 0 0 0;
+    }
+
+    /* Division section */
+
+    .line {
+        border-left: 1px solid #87879D;
+        height: 84px;
+        opacity: 0.25;
+        margin: 0 50%;
+    }
+
+    .circle-1 {
+        margin: 0 0 80px 0;
+    }
+
+    .circle-1,
+    .circle-2 {
+        border: 1px solid rgba(135, 135, 157, 0.25);
+        border-radius: 29px;
+        width: 56px;
+        height: 56px;
+    }
+
+    .circle-2 {
+        margin: 0;
+        background-color: #FFFFFF;
+        z-index: 10;
+        position: absolute;
+    }
+
+    /* Section */
+
+    .group-imgs {
+        height: 317px;
+        width: 327px;
+        margin: 0 auto 30px;
+    }
+
+    .woman-videocall {
+        width: 151px;
+        height: 143px;
+        background-size: 100% 100%;
+        margin-bottom: 24px;
+    }
+    .women-videochatting {
+        width: 151px;
+        height: 143px;
+        margin: 0 0 0 15px;
+        background-size: 100% 100%;
+    }
+
+    .men-meeting {
+        width: 151px;
+        height: 143px;
+        margin: 0 15px 0 0;
+        background-size: 100% 100%;
+    }
+
+    .man-texting {
+        width: 151px;
+        height: 143px;
+        background-size: 100% 100%;
+    }
+
+    .mini-title {
+        height: 26px;
+        margin: 0 auto 18px;
+    }
+
+    .description>h2 {
+        width: 375px;
+        height: 72px;
+        margin: 0 auto 32px;
+    }
+
+    .mini-description {
+        width: 327px;
+        height: 130px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 26px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    /* Footer */
+
+    #footer {
+        background: url(assets/tablet/image-footer.jpg) no-repeat;
+        background-color: #4D96A9;
+        background-blend-mode: multiply;
+        position: relative;
+        height: 428px;
+        width: 100%;
+        margin-top: -60px;
+        background-size: 100% 100%
+    }
+
+    .footer-info {
+        width: 100%;
+        margin-top: 90px;
+        height: auto;
+    }
+
+    .footer-header {
+        margin: 0 auto;
+    }
+
+    .footer-header>h2 {
+        color: #FAFAFA;
+        width: 327px;
+        height: 72px;
+        text-align: center;
+        margin: 0 auto 32px;
+    }
+
+    .footer-description {
+        margin: 0 52px 0 0;
+
+    }
+
+    .footer-description>p {
+        color: #FAFAFA;
+        width: 327px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 26px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .footer-download {
+        width: 193px;
+        height: 58px;
+        margin: 25px auto 0;
+    }
+
+    .footer-download>button {
+        background-color: #855FB1;
+    }
+
+    .footer-span {
+        color: #D9B8FF;
+    }
+}
+
+
 /* Medium devices (tablets, 768px and up) */
 
 @media (min-width: 768px) {
@@ -172,6 +399,8 @@ span {
     }
 
     .buttons {
+        display: flex;
+        flex-direction: row;
         width: 348px;
         margin: 0 auto;
     }
@@ -415,6 +644,8 @@ span {
     }
 
     .buttons {
+        display: flex;
+        flex-direction: row;
         margin: 0 auto;
     }
 
@@ -574,7 +805,7 @@ span {
         font-size: 18px;
         line-height: 26px;
         width: 250px;
-        
+
     }
 
     .footer-download {
@@ -661,6 +892,10 @@ span {
         margin: 0 auto 32px;
     }
 
+    .buttons{
+        display: flex;
+        flex-direction: row;
+    }
     .download {
         background-color: #4D96A9;
         margin: 0;
@@ -782,8 +1017,8 @@ span {
 
     #footer {
         background: url(assets/desktop/image-footer.jpg);
-    background-color: #4D96A9;
-    background-blend-mode: multiply;  
+        background-color: #4D96A9;
+        background-blend-mode: multiply;
         position: relative;
         height: 308px;
         width: 100%;
@@ -908,6 +1143,11 @@ span {
         height: 52px;
         text-align: center;
         margin: 0 auto 32px;
+    }
+
+    .buttons{
+        display: flex;
+        flex-direction: row;
     }
 
     .download {
@@ -1048,7 +1288,7 @@ span {
 
     }
 
-    .footer-header{
+    .footer-header {
         margin: 0;
     }
 
