@@ -4,7 +4,7 @@ body {
     overflow-x: hidden;
 }
 
-.container-fluid{
+.container-fluid {
     padding: 0
 }
 
@@ -15,7 +15,7 @@ h1 {
     color: #28283D;
 }
 
-h2{
+h2 {
     font-weight: 900;
     font-size: 40px;
     line-height: 44px;
@@ -28,7 +28,7 @@ p {
 
 }
 
-.mini-title{
+.mini-title {
     font-weight: 900;
     font-size: 16px;
     line-height: 26px;
@@ -69,51 +69,43 @@ span {
     background: url(assets/logo.svg);
 }
 
-.hero-left {
-    
-}
+.hero-left {}
 
-.hero-right {
-    
-}
+.hero-right {}
 
 /* Section */
 
 /* Group imgs */
 
-.woman-videocall{
+.woman-videocall {
     background: url(assets/desktop/image-woman-in-videocall.jpg);
     border-radius: 8px;
 }
 
-.women-videochatting{
+.women-videochatting {
     background: url(assets/desktop/image-women-videochatting.jpg);
     border-radius: 8px;
 }
 
-.men-meeting{
+.men-meeting {
     background: url(assets/desktop/image-men-in-meeting.jpg);
     border-radius: 8px;
 }
 
-.man-texting{
+.man-texting {
     background: url(assets/desktop/image-man-texting.jpg);
     border-radius: 8px;
 }
 
-.two{
+.two {
     margin-bottom: 0;
 }
 
 /* Footer */
 
-#footer{
-    background: url(assets/desktop/image-footer.jpg);
-    background-color: #4D96A9;
-    background-blend-mode: multiply;   
-}
+#footer {}
 
-.row{
+.row {
     --bs-gutter-x: 0;
 }
 
@@ -125,10 +117,11 @@ span {
 
 @media (min-width: 768px) {
 
-    body{
+    body {
         width: 100%;
         overflow-x: hidden;
     }
+
     /* Header */
     #header {
         margin-bottom: 122px;
@@ -140,16 +133,16 @@ span {
         margin: 80px auto 60px;
     }
 
-    .infomation{
+    .infomation {
         height: 350px;
     }
 
-    .hero-center{
+    .hero-center {
         background: url(assets/tablet/image-hero.png);
         width: 100%;
         height: 303px;
         background-size: 100% 100%;
-        margin: 0 0 43px 0 ;
+        margin: 0 0 43px 0;
     }
 
     .content {
@@ -178,12 +171,12 @@ span {
         margin: 0 auto 32px;
     }
 
-    .buttons{
+    .buttons {
         width: 348px;
         margin: 0 auto;
     }
 
-    .download{
+    .download {
         background-color: #4D96A9;
         width: 180px;
     }
@@ -194,12 +187,13 @@ span {
 
     /* Division Section */
 
-    .division{
+    .division {
         width: 56px;
         margin: 90px auto;
     }
 
-    .circle-1>p, .circle-2>p {
+    .circle-1>p,
+    .circle-2>p {
         font-size: 18px;
         line-height: 26px;
         text-align: center;
@@ -216,18 +210,19 @@ span {
         margin: 0 50%;
     }
 
-    .circle-1{
+    .circle-1 {
         margin: 0 0 80px 0;
     }
 
-    .circle-1, .circle-2 {
+    .circle-1,
+    .circle-2 {
         border: 1px solid rgba(135, 135, 157, 0.25);
         border-radius: 29px;
         width: 56px;
         height: 56px;
     }
 
-    .circle-2{
+    .circle-2 {
         margin: 0;
         background-color: #FFFFFF;
         z-index: 10;
@@ -236,49 +231,50 @@ span {
 
     /* Section */
 
-    .group-imgs{
+    .group-imgs {
         height: 156px;
         width: 701px;
         margin: 0 auto 30px;
     }
-    .woman-videocall{
+
+    .woman-videocall {
         width: 164px;
         height: 156px;
         background-size: 100% 100%;
     }
 
-    .women-videochatting{
+    .women-videochatting {
         width: 164px;
         height: 156px;
         margin: 0 7.5px 0 15px;
         background-size: 100% 100%;
     }
 
-    .men-meeting{
+    .men-meeting {
         width: 164px;
         height: 156px;
         margin: 0 15px 0 7.5px;
         background-size: 100% 100%;
     }
 
-    .man-texting{
+    .man-texting {
         width: 164px;
         height: 156px;
         background-size: 100% 100%;
     }
 
-    .mini-title{
+    .mini-title {
         height: 26px;
         margin: 0 auto 18px;
     }
 
-    .description>h2{
+    .description>h2 {
         width: 445px;
         height: 88px;
         margin: 0 auto 32px;
     }
 
-    .mini-description{
+    .mini-description {
         width: 573px;
         height: 78px;
         font-weight: 500;
@@ -290,7 +286,7 @@ span {
 
     /* Footer */
 
-    #footer{
+    #footer {
         background: url(assets/tablet/image-footer.jpg) no-repeat;
         background-color: #4D96A9;
         background-blend-mode: multiply;
@@ -301,31 +297,31 @@ span {
         background-size: 100% 100%
     }
 
-    .footer-info{
+    .footer-info {
         width: 100%;
         margin-top: 90px;
         height: auto;
-        
+
     }
 
-    .footer-header{
+    .footer-header {
         margin: 0 auto;
     }
 
-    .footer-header>h2{
+    .footer-header>h2 {
         color: #FAFAFA;
         width: 457px;
         height: 88px;
         text-align: center;
         margin: 0 auto 32px;
-    } 
-
-    .footer-description{
-        margin: 0 52px 0 0;
-        
     }
 
-    .footer-description>p{
+    .footer-description {
+        margin: 0 52px 0 0;
+
+    }
+
+    .footer-description>p {
         color: #FAFAFA;
         width: 573px;
         font-weight: 500;
@@ -335,27 +331,28 @@ span {
         text-align: center;
     }
 
-    .footer-download{
+    .footer-download {
         width: 193px;
         height: 58px;
         margin: 25px auto 0;
     }
 
-    .footer-download>button{
+    .footer-download>button {
         background-color: #855FB1;
     }
 
-    .footer-span{
+    .footer-span {
         color: #D9B8FF;
     }
 
- }
+}
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) { 
-    body{
+@media (min-width: 992px) {
+    body {
         overflow-x: hidden;
     }
+
     /* Header */
     #header {
         width: 100%;
@@ -368,7 +365,7 @@ span {
         margin: 80px auto 60px;
     }
 
-    .hero-center{
+    .hero-center {
         display: none;
     }
 
@@ -417,11 +414,11 @@ span {
         margin: 0 auto 39px;
     }
 
-    .buttons{
+    .buttons {
         margin: 0 auto;
     }
 
-    .download{
+    .download {
         background-color: #4D96A9;
         margin: 0;
     }
@@ -440,12 +437,13 @@ span {
 
     /* Division Section */
 
-    .division{
+    .division {
         width: 56px;
         margin: 0 auto;
     }
 
-    .circle-1>p, .circle-2>p {
+    .circle-1>p,
+    .circle-2>p {
         font-size: 18px;
         line-height: 26px;
         text-align: center;
@@ -460,18 +458,19 @@ span {
         margin: 0 50%;
     }
 
-    .circle-1{
+    .circle-1 {
         margin: 0 0 80px 0;
     }
 
-    .circle-1, .circle-2 {
+    .circle-1,
+    .circle-2 {
         border: 1px solid rgba(135, 135, 157, 0.25);
         border-radius: 29px;
         width: 56px;
-        height: 56px;   
+        height: 56px;
     }
 
-    .circle-2{
+    .circle-2 {
         margin: 0 0 -30px 0;
         background-color: #FFFFFF;
         z-index: 10;
@@ -480,49 +479,50 @@ span {
 
     /* Section */
 
-    .group-imgs{
+    .group-imgs {
         height: 242px;
         width: 701px;
         margin: 0 auto 20px;
     }
-    .woman-videocall{
+
+    .woman-videocall {
         width: 164px;
         height: 156px;
         background-size: 100% 100%;
     }
 
-    .women-videochatting{
+    .women-videochatting {
         width: 164px;
         height: 156px;
         margin: 0 7.5px 0 15px;
         background-size: 100% 100%;
     }
 
-    .men-meeting{
+    .men-meeting {
         width: 164px;
         height: 156px;
         margin: 0 15px 0 7.5px;
         background-size: 100% 100%;
     }
 
-    .man-texting{
+    .man-texting {
         width: 164px;
         height: 156px;
         background-size: 100% 100%;
     }
 
-    .mini-title{
+    .mini-title {
         height: 26px;
         margin: 0 auto 18px;
     }
 
-    .description>h2{
+    .description>h2 {
         width: 573px;
         height: 88px;
         margin: 0 auto 32px;
     }
 
-    .mini-description{
+    .mini-description {
         width: 525px;
         height: 78px;
         font-weight: 500;
@@ -532,69 +532,73 @@ span {
         margin: 0 auto 72px;
     }
 
-    
+
 
     /* Footer */
 
-    #footer{
+    #footer {
         position: relative;
         height: 308px;
         width: 100%;
         margin-top: 26px;
     }
 
-    .footer-info{
+    .footer-info {
         width: 900px;
         margin: 116px auto 104px;
-        
+
     }
 
-    .footer-header{
+    .footer-header {
         width: 333.5px;
+        margin: 0;
     }
 
-    .footer-header>h2{
+    .footer-header>h2 {
         color: #FAFAFA;
         width: 333.5px;
         height: 88px;
         text-align: left;
-    } 
-
-    .footer-description{
-        margin: 0 20px 0 44px;
-        width: 333.5px;
-        
+        margin-right: 0;
     }
 
-    .footer-description>p{
+    .footer-description {
+        margin: 0 20px;
+        width: 333.5px;
+
+    }
+
+    .footer-description>p {
         color: #FAFAFA;
         font-weight: 500;
         font-size: 18px;
         line-height: 26px;
+        width: 250px;
+        
     }
 
-    .footer-download{
+    .footer-download {
         width: 193px;
         height: 58px;
         margin: 0;
     }
 
-    .footer-download>button{
+    .footer-download>button {
         background-color: #855FB1;
     }
 
-    .footer-span{
+    .footer-span {
         color: #D9B8FF;
     }
 
-    .footer-download>button:hover{
+    .footer-download>button:hover {
         background-color: #b18bdd;
     }
- }
+}
 
 /* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-    body{
+    body {
         overflow-x: hidden;
     }
 
@@ -610,7 +614,7 @@ span {
     }
 
 
-    .hero-center{
+    .hero-center {
         display: none;
     }
 
@@ -657,7 +661,7 @@ span {
         margin: 0 auto 32px;
     }
 
-    .download{
+    .download {
         background-color: #4D96A9;
         margin: 0;
     }
@@ -676,7 +680,8 @@ span {
 
     /* Division Section */
 
-    .circle-1>p, .circle-2>p {
+    .circle-1>p,
+    .circle-2>p {
         font-size: 18px;
         line-height: 26px;
         text-align: center;
@@ -686,7 +691,7 @@ span {
 
     /* Division section */
 
-    .division{
+    .division {
         width: 56px;
         margin: 0 auto;
     }
@@ -698,19 +703,20 @@ span {
         margin: 0 50%;
     }
 
-    .circle-1{
+    .circle-1 {
         margin: 0 0 80px 0;
     }
 
-    .circle-1, .circle-2 {
+    .circle-1,
+    .circle-2 {
         border: 1px solid rgba(135, 135, 157, 0.25);
         border-radius: 29px;
         width: 56px;
         height: 56px;
-        
+
     }
 
-    .circle-2{
+    .circle-2 {
         margin: 0 0 -30px 0;
         background-color: #FFFFFF;
         z-index: 10;
@@ -719,49 +725,50 @@ span {
 
     /* Section */
 
-    .group-imgs{
+    .group-imgs {
         height: 242px;
         width: 1110px;
         margin: 0 auto 80px;
     }
-    .woman-videocall{
+
+    .woman-videocall {
         width: 255px;
         height: 242px;
         background-size: 100% 100%;
     }
 
-    .women-videochatting{
+    .women-videochatting {
         width: 255px;
         height: 242px;
         margin: 0 15px 0 30px;
         background-size: 100% 100%;
     }
 
-    .men-meeting{
+    .men-meeting {
         width: 255px;
         height: 242px;
         margin: 0 30px 0 15px;
         background-size: 100% 100%;
     }
 
-    .man-texting{
+    .man-texting {
         width: 255px;
         height: 242px;
         background-size: 100% 100%;
     }
 
-    .mini-title{
+    .mini-title {
         height: 26px;
         margin: 0 auto 18px;
     }
 
-    .description>h2{
+    .description>h2 {
         width: 422px;
         height: 88px;
         margin: 0 auto 32px;
     }
 
-    .mini-description{
+    .mini-description {
         width: 573px;
         height: 78px;
         font-weight: 500;
@@ -773,73 +780,79 @@ span {
 
     /* Footer */
 
-    #footer{
+    #footer {
+        background: url(assets/desktop/image-footer.jpg);
+    background-color: #4D96A9;
+    background-blend-mode: multiply;  
         position: relative;
         height: 308px;
         width: 100%;
         margin-top: 26px;
     }
 
-    .footer-info{
+    .footer-info {
         width: 1000px;
         /* margin: 116px auto 104px; */
-        
+
     }
 
-    .footer-header{
+    .footer-header {
         width: 350px;
     }
 
-    .footer-header>h2{
+    .footer-header>h2 {
         color: #FAFAFA;
         width: 400px;
         height: 88px;
         text-align: left;
-    } 
-
-    .footer-description{
-        width: 400px;
-        margin: 0 0 0 44px;
-        
     }
 
-    .footer-description>p{
+    .footer-description {
+        width: 400px;
+        margin: 0 0 0 44px;
+
+    }
+
+    .footer-description>p {
         color: #FAFAFA;
         font-weight: 500;
         font-size: 18px;
         line-height: 26px;
-        margin: 0 40px;
+        margin: 0;
+        width: 350px;
     }
 
-    .footer-download{
+    .footer-download {
         width: 193px;
         height: 58px;
         margin: 0;
     }
 
-    .footer-download>button{
+    .footer-download>button {
         background-color: #855FB1;
     }
 
-    .footer-span{
+    .footer-span {
         color: #D9B8FF;
     }
 
-    .footer-download>button:hover{
+    .footer-download>button:hover {
         background-color: #b18bdd;
     }
 }
 
 /* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
-    body{
+    body {
         background-color: #000000;
         overflow-x: hidden;
     }
-    .container-fluid{
+
+    .container-fluid {
         width: 1440px;
         background-color: #FAFAFAFA;
     }
+
     /* Header */
     #header {
         margin-bottom: 122px;
@@ -852,7 +865,7 @@ span {
     }
 
 
-    .hero-center{
+    .hero-center {
         display: none;
     }
 
@@ -897,7 +910,7 @@ span {
         margin: 0 auto 32px;
     }
 
-    .download{
+    .download {
         background-color: #4D96A9;
         margin: 0;
     }
@@ -917,7 +930,8 @@ span {
 
     /* Division Section */
 
-    .circle-1>p, .circle-2>p {
+    .circle-1>p,
+    .circle-2>p {
         font-size: 18px;
         line-height: 26px;
         text-align: center;
@@ -927,7 +941,7 @@ span {
 
     /* Division section */
 
-    .division{
+    .division {
         width: 56px;
         margin: 0 auto;
     }
@@ -939,18 +953,19 @@ span {
         margin: 0 50%;
     }
 
-    .circle-1{
+    .circle-1 {
         margin: 0 0 80px 0;
     }
 
-    .circle-1, .circle-2 {
+    .circle-1,
+    .circle-2 {
         border: 1px solid rgba(135, 135, 157, 0.25);
         border-radius: 29px;
         width: 56px;
         height: 56px;
     }
 
-    .circle-2{
+    .circle-2 {
         margin: 0 0 -30px 0;
         background-color: #FFFFFF;
         z-index: 10;
@@ -959,49 +974,50 @@ span {
 
     /* Section */
 
-    .group-imgs{
+    .group-imgs {
         height: 242px;
         width: 1110px;
         margin: 0 auto 80px;
     }
-    .woman-videocall{
+
+    .woman-videocall {
         width: 255px;
         height: 242px;
         background-size: 100% 100%;
     }
 
-    .women-videochatting{
+    .women-videochatting {
         width: 255px;
         height: 242px;
         margin: 0 15px 0 30px;
         background-size: 100% 100%;
     }
 
-    .men-meeting{
+    .men-meeting {
         width: 255px;
         height: 242px;
         margin: 0 30px 0 15px;
         background-size: 100% 100%;
     }
 
-    .man-texting{
+    .man-texting {
         width: 255px;
         height: 242px;
         background-size: 100% 100%;
     }
 
-    .mini-title{
+    .mini-title {
         height: 26px;
         margin: 0 auto 18px;
     }
 
-    .description>h2{
+    .description>h2 {
         width: 422px;
         height: 88px;
         margin: 0 auto 32px;
     }
 
-    .mini-description{
+    .mini-description {
         width: 525px;
         height: 78px;
         font-weight: 500;
@@ -1011,57 +1027,67 @@ span {
         margin: 0 auto 72px;
     }
 
-    
+
 
     /* Footer */
 
-    #footer{
+    #footer {
+        background: url(assets/desktop/image-footer.jpg);
+        background-color: #4D96A9;
+        background-blend-mode: multiply;
         position: relative;
         height: 308px;
         width: 1440px;
         margin-top: 26px;
+        background-size: 100% 100%;
     }
 
-    .footer-info{
+    .footer-info {
         width: 1110px;
         margin: 116px auto 104px;
-        
+
     }
 
-    .footer-header>h2{
+    .footer-header{
+        margin: 0;
+    }
+
+    .footer-header>h2 {
         color: #FAFAFA;
         width: 350px;
         height: 88px;
         text-align: left;
-    } 
-
-    .footer-description{
-        margin: 0 64px;
-        
     }
 
-    .footer-description>p{
+    .footer-description {
+        margin: 0 30px;
+
+    }
+
+    .footer-description>p {
         color: #FAFAFA;
         font-weight: 500;
         font-size: 18px;
         line-height: 26px;
+        width: 350px;
+        text-align: left;
     }
 
-    .footer-download{
+    .footer-download {
         width: 193px;
         height: 58px;
-        margin: 0;
+        margin: 0 auto;
     }
 
-    .footer-download>button{
+    .footer-download>button {
         background-color: #855FB1;
     }
 
-    .footer-span{
+    .footer-span {
         color: #D9B8FF;
     }
 
-    .footer-download>button:hover{
+    .footer-download>button:hover {
         background-color: #b18bdd;
     }
 }
