@@ -460,6 +460,10 @@ span {
         
     }
 
+    .content>h1{
+        margin-bottom: 27px;
+    }
+
     .buttons {
         display: flex;
         flex-direction: row;
