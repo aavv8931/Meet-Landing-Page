@@ -616,6 +616,10 @@ span {
         margin-top: 40px;  
     }
 
+    .content>h1{
+        margin-bottom: 30px;
+    }
+
     .content-p {
         width: 450px;
         font-size: 1.03rem;
