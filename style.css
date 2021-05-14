@@ -1,51 +1,97 @@
+/* Global Style */
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
 body {
     background-color: #F2F2F2;
     font-family: "Red Hat Display";
-    overflow-x: hidden;
 }
 
 .container-fluid {
     padding: 0
 }
 
-/* Global Styles */
+.row {
+    --bs-gutter-x: 0;
+}
 
-/* Header */
 h1 {
+    font-weight: 900;
+    font-size: 2.5rem;
+    line-height: 2.75rem;
     color: #28283D;
+    text-align: center;
 }
 
 h2 {
     font-weight: 900;
-    font-size: 40px;
-    line-height: 44px;
-    text-align: center;
-    color: #28283d;
+    font-size: 2rem;
+    line-height: 2.25rem;
 }
 
 p {
-    color: #87879D;
-
-}
-
-.mini-title {
-    font-weight: 900;
-    font-size: 16px;
-    line-height: 26px;
-    letter-spacing: 4px;
-    color: #4D96A9;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.63rem;
     text-align: center;
-    text-transform: uppercase;
+    color: #87789D;
 }
 
-.btn {
-    border-radius: 29px;
-    color: #FFFFFF;
+
+.header-logo {
+    padding: 48px 128px;
+    text-align: center;
+}
+
+#logo {
+    width: 119px;
+    height: 28px;
+}
+
+.hero-center {
+    background: url(assets/tablet/image-hero.png) no-repeat;
+    width: 375px;
+    height: 153px;
+    background-size: 375px;
+    margin: 0 0 48px 0;
+}
+
+.content {
+    width: 327px;
+    height: 354px;
+    margin: 0px auto;
+}
+
+.content>h1 {
+    padding: 0 20px 24px;
+    margin: 0;
+}
+
+.content-p {
+    margin: 0;
+    padding-bottom: 32px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    width: 193px;
+    height: 132px;
+    margin: 0 auto;
 }
 
 .download {
+    background-color: #4D96A9;
     width: 193px;
     height: 58px;
+    border-radius: 29px;
+    color: #FFFFFF;
 }
 
 span {
@@ -53,1281 +99,829 @@ span {
 }
 
 .info-btn {
+    background-color: #855FB1;
     width: 139px;
     height: 58px;
-    background-color: #855FB1;
-
-}
-
-.download:hover,
-.info-btn:hover {
-    cursor: grab;
+    border-radius: 29px;
     color: #FFFFFF;
+    margin: 16px auto 0;
 }
 
-#logo {
-    background: url(assets/logo.svg);
+/* Division Section */
+
+.division {
+    height: 140px;
+    width: 56px;
+    margin: 64px auto;
 }
 
-.hero-left {}
+.line {
+    border-left: 1px solid #87879D;
+    height: 84px;
+    opacity: 0.25;
+    margin: 0 50%;
+}
 
-.hero-right {}
+.circle-1,
+.circle-2 {
+    height: 56px;
+    width: 56px;
+    border: 1px solid rgba(135, 135, 157, 0.25);
+    border-radius: 29px;
+}
+
+.circle-2 {
+    background-color: #FFFFFF;
+    z-index: 10;
+    position: relative;
+}
+
+.circle-1>p,
+.circle-2>p {
+    font-size: 1rem;
+    line-height: 1.63rem;
+    text-align: center;
+    margin: 14px 0 0 0;
+}
 
 /* Section */
 
-/* Group imgs */
+#section {
+    width: 327px;
+    height: 658px;
+    margin: 0 auto;
+}
+
+.group-imgs {
+    margin-bottom: 64px;
+}
 
 .woman-videocall {
     background: url(assets/desktop/image-woman-in-videocall.jpg);
+    width: 151px;
+    height: 143px;
+    background-size: 100% 100%;
+    margin: 0 25px 24px 0;
     border-radius: 8px;
 }
 
 .women-videochatting {
     background: url(assets/desktop/image-women-videochatting.jpg);
+    width: 151px;
+    height: 143px;
+    background-size: 100% 100%;
     border-radius: 8px;
 }
 
 .men-meeting {
     background: url(assets/desktop/image-men-in-meeting.jpg);
+    width: 151px;
+    height: 143px;
+    margin: 0 25px 0 0;
+    background-size: 100% 100%;
     border-radius: 8px;
 }
 
 .man-texting {
     background: url(assets/desktop/image-man-texting.jpg);
+    width: 151px;
+    height: 143px;
+    background-size: 100% 100%;
     border-radius: 8px;
 }
 
-.two {
-    margin-bottom: 0;
+.mini-title {
+    width: 271px;
+    height: 26px;
+    margin: 0 auto 24px;
+    letter-spacing: 4px;
+    color: #4D96A9;
+}
+
+.description>h2 {
+    width: 327px;
+    height: 72px;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.mini-description {
+    width: 327px;
+    height: 130px;
+    margin: 0;
 }
 
 /* Footer */
 
-#footer {}
-
-.row {
-    --bs-gutter-x: 0;
+#footer {
+    background: url(assets/tablet/image-footer.jpg) no-repeat;
+    background-color: #4D96A9;
+    background-blend-mode: multiply;
+    position: relative;
+    height: 428px;
+    width: 375px;
+    margin-top: -90px;
+    background-position: center;
 }
 
+.footer-info {
+    width: 327px;
+    height: 264px;
+    margin: 92px auto 72px;
+}
 
+.footer-header>h2 {
+    color: #FAFAFA;
+    width: 327px;
+    height: 72px;
+    text-align: center;
+    margin-bottom: 24px;
+}
 
-/* Media Queries styles */
+.footer-description>p {
+    color: #FAFAFA;
+    width: 327px;
+    font-weight: 500;
+    font-size: 1.13rem;
+    line-height: 1.63rem;
+    margin-bottom: 32px;
+    text-align: center;
+}
 
-/* Small devices (cellphones, 375px and up) */
-@media (min-width: 375px) {
-    body {
-        width: 100%;
-        overflow-x: hidden;
+.footer-download {
+    width: 193px;
+    height: 58px;
+    margin: 0 auto 72px;
+}
+
+.footer-download>button {
+    background-color: #855FB1;
+}
+
+.footer-span {
+    color: #D9B8FF;
+}
+
+/* Small Devices min-width: 576px and max-width: 767.98px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .container-fluid {
+        padding: 0
     }
+
+    /* Header */
 
     #logo {
         width: 119px;
         height: 28px;
-        margin: 48px auto 54px;
-    }
-     
-    .information{
-
     }
 
     .hero-center {
-        background: url(assets/tablet/image-hero.png);
         width: 100%;
-        height: 303px;
+        height: 250px;
         background-size: 100% 100%;
-        margin: 0 0 43px 0;
-    }
-
-    .content {
-        width: 457;
-        height: 355px;
-        margin: 0px;
-    }
-
-    .content>h1 {
-        font-weight: 900;
-        font-size: 40px;
-        line-height: 44px;
-        width: 327px;
-        height: 88px;
-        margin: 0 auto 24px;
-        text-align: center;
-    }
-
-    .content>p {
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 26px;
-        width: 327px;
-        height: 78px;
-        text-align: center;
-        margin: 0 auto 32px;
-    }
-
-    .buttons {
-        display: flex;
-        flex-direction: column;
-        width: 193px;
-        margin: 0 auto;
-    }
-
-    .download {
-        background-color: #4D96A9;
-        width: 180px;
-    }
-
-    .info-btn {
-        margin: 16px 0 0 16px;
-    }
-
-    /* Division Section */
-
-    .division {
-        width: 56px;
-        margin: 90px auto;
-    }
-
-    .circle-1>p,
-    .circle-2>p {
-        font-size: 18px;
-        line-height: 26px;
-        text-align: center;
-        margin: 14px 0 0 0;
-    }
-
-    /* Division section */
-
-    .line {
-        border-left: 1px solid #87879D;
-        height: 84px;
-        opacity: 0.25;
-        margin: 0 50%;
-    }
-
-    .circle-1 {
-        margin: 0 0 80px 0;
-    }
-
-    .circle-1,
-    .circle-2 {
-        border: 1px solid rgba(135, 135, 157, 0.25);
-        border-radius: 29px;
-        width: 56px;
-        height: 56px;
-    }
-
-    .circle-2 {
-        margin: 0;
-        background-color: #FFFFFF;
-        z-index: 10;
-        position: absolute;
-    }
-
-    /* Section */
-
-    .group-imgs {
-        height: 317px;
-        width: 327px;
-        margin: 0 auto 30px;
-    }
-
-    .woman-videocall {
-        width: 151px;
-        height: 143px;
-        background-size: 100% 100%;
-        margin-bottom: 24px;
-    }
-    .women-videochatting {
-        width: 151px;
-        height: 143px;
-        margin: 0 0 0 15px;
-        background-size: 100% 100%;
-    }
-
-    .men-meeting {
-        width: 151px;
-        height: 143px;
-        margin: 0 15px 0 0;
-        background-size: 100% 100%;
-    }
-
-    .man-texting {
-        width: 151px;
-        height: 143px;
-        background-size: 100% 100%;
-    }
-
-    .mini-title {
-        height: 26px;
-        margin: 0 auto 18px;
-    }
-
-    .description>h2 {
-        width: 375px;
-        height: 72px;
-        margin: 0 auto 32px;
-    }
-
-    .mini-description {
-        width: 327px;
-        height: 130px;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 26px;
-        text-align: center;
-        margin: 0 auto;
+        margin: 0 0 48px 0;
     }
 
     /* Footer */
 
     #footer {
-        background: url(assets/tablet/image-footer.jpg) no-repeat;
-        background-color: #4D96A9;
-        background-blend-mode: multiply;
-        position: relative;
-        height: 428px;
         width: 100%;
-        margin-top: -60px;
-        background-size: 100% 100%
-    }
-
-    .footer-info {
-        width: 100%;
-        margin-top: 90px;
-        height: auto;
-    }
-
-    .footer-header {
-        margin: 0 auto;
-    }
-
-    .footer-header>h2 {
-        color: #FAFAFA;
-        width: 327px;
-        height: 72px;
-        text-align: center;
-        margin: 0 auto 32px;
-    }
-
-    .footer-description {
-        margin: 0 52px 0 0;
-
-    }
-
-    .footer-description>p {
-        color: #FAFAFA;
-        width: 327px;
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 26px;
-        margin: 0 auto;
-        text-align: center;
-    }
-
-    .footer-download {
-        width: 193px;
-        height: 58px;
-        margin: 25px auto 0;
-    }
-
-    .footer-download>button {
-        background-color: #855FB1;
-    }
-
-    .footer-span {
-        color: #D9B8FF;
     }
 }
 
-
-/* Medium devices (tablets, 768px and up) */
-
-@media (min-width: 768px) {
-
-    body {
-        width: 100%;
-        overflow-x: hidden;
-    }
-
+ /* Medium Devices min-width: 768px and max-width: 991.98px)  */
+@media (min-width: 768px) and (max-width: 991.98px) {
     /* Header */
-    #header {
-        margin-bottom: 122px;
-    }
-
-    #logo {
-        width: 119px;
-        height: 28px;
-        margin: 80px auto 60px;
-    }
-
-    .infomation {
-        height: 350px;
-    }
 
     .hero-center {
-        background: url(assets/tablet/image-hero.png);
         width: 100%;
         height: 303px;
         background-size: 100% 100%;
-        margin: 0 0 43px 0;
+        margin: 0 0 48px 0;
     }
 
-    .content {
-        width: 457;
+    .content{
+        width: 457px;
         height: 262px;
-        margin: 0px;
     }
 
-    .content>h1 {
-        font-weight: 900;
-        font-size: 48px;
-        line-height: 48px;
+    .content>h1{
         width: 339px;
         height: 96px;
+        font-size: 3rem;
+        line-height: 3rem;
+        padding: 0;
         margin: 0 auto 24px;
-        text-align: center;
     }
 
-    .content>p {
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 26px;
+    .content-p {
         width: 457px;
-        height: 52px;
-        text-align: center;
-        margin: 0 auto 32px;
     }
 
     .buttons {
         display: flex;
         flex-direction: row;
         width: 348px;
-        margin: 0 auto;
-    }
-
-    .download {
-        background-color: #4D96A9;
-        width: 180px;
+        height: 58px;
     }
 
     .info-btn {
-        margin: 5px 0 0 16px;
+        margin: 0 0 0 16px;
     }
 
     /* Division Section */
 
     .division {
-        width: 56px;
-        margin: 90px auto;
-    }
-
-    .circle-1>p,
-    .circle-2>p {
-        font-size: 18px;
-        line-height: 26px;
-        text-align: center;
-        margin: 14px 0 0 0;
-
-    }
-
-    /* Division section */
-
-    .line {
-        border-left: 1px solid #87879D;
-        height: 84px;
-        opacity: 0.25;
-        margin: 0 50%;
-    }
-
-    .circle-1 {
-        margin: 0 0 80px 0;
-    }
-
-    .circle-1,
-    .circle-2 {
-        border: 1px solid rgba(135, 135, 157, 0.25);
-        border-radius: 29px;
-        width: 56px;
-        height: 56px;
-    }
-
-    .circle-2 {
-        margin: 0;
-        background-color: #FFFFFF;
-        z-index: 10;
-        position: absolute;
+        margin: 80px auto;
     }
 
     /* Section */
 
+    #section {
+        width: 689px;
+        height: 444px;
+        margin: 0 auto;
+    }
+
     .group-imgs {
-        height: 156px;
-        width: 701px;
-        margin: 0 auto 30px;
+        margin-bottom: 48px;
     }
 
     .woman-videocall {
         width: 164px;
         height: 156px;
-        background-size: 100% 100%;
+        margin: 0 11px 0 0;
+       
     }
 
     .women-videochatting {
         width: 164px;
         height: 156px;
-        margin: 0 7.5px 0 15px;
-        background-size: 100% 100%;
+        margin: 0 11px 0 0;
     }
 
     .men-meeting {
         width: 164px;
         height: 156px;
-        margin: 0 15px 0 7.5px;
-        background-size: 100% 100%;
+        margin: 0 11px 0 0;   
     }
 
     .man-texting {
         width: 164px;
         height: 156px;
-        background-size: 100% 100%;
+    }
+
+    .description{
+        width: 573px;
+        height: 240px;
+        margin: 0 auto;
     }
 
     .mini-title {
-        height: 26px;
-        margin: 0 auto 18px;
+        margin: 0 auto 16px;
     }
 
     .description>h2 {
         width: 445px;
         height: 88px;
+        text-align: center;
+        font-size: 2.5rem;
+        line-height: 2.75rem;
         margin: 0 auto 32px;
     }
 
     .mini-description {
         width: 573px;
         height: 78px;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 26px;
-        text-align: center;
-        margin: 0 auto;
     }
 
     /* Footer */
 
-    #footer {
-        background: url(assets/tablet/image-footer.jpg) no-repeat;
-        background-color: #4D96A9;
-        background-blend-mode: multiply;
-        position: relative;
-        height: 428px;
-        width: 100%;
-        margin-top: -60px;
-        background-size: 100% 100%
-    }
+#footer {
+    width: 100%;
+    margin-top: -110px;
+    background-size: 100% 100%;
+}
 
-    .footer-info {
-        width: 100%;
-        margin-top: 90px;
-        height: auto;
+.footer-info {
+    width: 573px;
+    height: 264px;
+    margin: 92px auto 72px;
+}
 
-    }
+.footer-header>h2 {
+    width: 457px;
+    height: 88px;
+    margin: 0 auto 32px;
+    font-size: 2.5rem;
+    line-height: 2.75rem;
+}
 
-    .footer-header {
-        margin: 0 auto;
-    }
+.footer-description>p {
+    width: 573px;
+    margin-bottom: 40px;
+}
 
-    .footer-header>h2 {
-        color: #FAFAFA;
-        width: 457px;
-        height: 88px;
-        text-align: center;
-        margin: 0 auto 32px;
-    }
-
-    .footer-description {
-        margin: 0 52px 0 0;
-
-    }
-
-    .footer-description>p {
-        color: #FAFAFA;
-        width: 573px;
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 26px;
-        margin: 0 auto;
-        text-align: center;
-    }
-
-    .footer-download {
-        width: 193px;
-        height: 58px;
-        margin: 25px auto 0;
-    }
-
-    .footer-download>button {
-        background-color: #855FB1;
-    }
-
-    .footer-span {
-        color: #D9B8FF;
-    }
+.footer-download {
+    margin: 0 auto;
+}
 
 }
 
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-    body {
-        overflow-x: hidden;
-    }
-
+ /*Large Devices min-width: 992px and max-width: 1199.98px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
     /* Header */
-    #header {
+    
+    .information{
         width: 100%;
-        margin-bottom: 122px;
+        height: 358px;
     }
-
-    #logo {
-        width: 119px;
-        height: 28px;
-        margin: 80px auto 60px;
-    }
-
-    .hero-center {
+    .hero-center{
         display: none;
     }
 
-    .hero-left {
+    .hero-left{
+        width: 30%;
         background: url(assets/desktop/image-hero-left.png) no-repeat;
-        width: 33.33%;
-        height: 303px;
-        padding-left: 0;
-        background-size: 80%;
+        background-size: 90% 80%;
     }
 
-    .hero-right {
+    .hero-right{
+        width: 30%;
         background: url(assets/desktop/image-hero-right.png) no-repeat;
-        width: 33.33%;
-        height: 303px;
-        padding-right: 0;
+        background-size: 90% 80%;
         background-position: right;
-        margin-top: 43px;
-        background-size: 80%;
+        margin-top: 40px;
     }
 
-    .content {
-        width: 33.34%;
-        height: 304px;
-        margin: 0px;
-        text-align: center;
-        padding-top: 43px;
-    }
-
-    .content>h1 {
-        font-weight: 900;
-        font-size: 48px;
-        line-height: 48px;
-        width: 339px;
-        height: 128;
-        margin: 0 auto 34px;
-    }
-
-    .content>p {
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 26px;
+    .content{
         width: 350px;
-        height: 52px;
-        text-align: center;
-        margin: 0 auto 39px;
+        height: 304px;
+        
     }
 
     .buttons {
         display: flex;
         flex-direction: row;
-        margin: 0 auto;
-    }
-
-    .download {
-        background-color: #4D96A9;
-        margin: 0;
-    }
-
-    .download:hover {
-        background-color: #71C0D4;
+        width: 348px;
+        height: 58px;
     }
 
     .info-btn {
-        margin-left: 20px;
-    }
-
-    .info-btn:hover {
-        background-color: #B18BDD;
+        margin: 0 0 0 16px;
     }
 
     /* Division Section */
 
     .division {
-        width: 56px;
-        margin: 0 auto;
-    }
-
-    .circle-1>p,
-    .circle-2>p {
-        font-size: 18px;
-        line-height: 26px;
-        text-align: center;
-        margin: 14px 0 0 0;
-
-    }
-
-    .line {
-        border-left: 1px solid #87879D;
-        height: 84px;
-        opacity: 0.25;
-        margin: 0 50%;
-    }
-
-    .circle-1 {
-        margin: 0 0 80px 0;
-    }
-
-    .circle-1,
-    .circle-2 {
-        border: 1px solid rgba(135, 135, 157, 0.25);
-        border-radius: 29px;
-        width: 56px;
-        height: 56px;
-    }
-
-    .circle-2 {
-        margin: 0 0 -30px 0;
-        background-color: #FFFFFF;
-        z-index: 10;
-        position: absolute;
+        margin: 100px auto;
     }
 
     /* Section */
 
+    #section {
+        width: 900px;
+        height: 562px;
+        margin: 0 auto;
+    }
+
     .group-imgs {
-        height: 242px;
-        width: 701px;
-        margin: 0 auto 20px;
+        width: 860px;
+        height: 200px;
+        margin-bottom: 58px;
     }
 
     .woman-videocall {
-        width: 164px;
-        height: 156px;
-        background-size: 100% 100%;
+        width: 200px;
+        height: 200px;
+        margin: 0 10px 0 0;
+       
     }
 
     .women-videochatting {
-        width: 164px;
-        height: 156px;
-        margin: 0 7.5px 0 15px;
-        background-size: 100% 100%;
+        width: 200px;
+        height: 200px;
+        margin: 0 10px 0 10px;
     }
 
     .men-meeting {
-        width: 164px;
-        height: 156px;
-        margin: 0 15px 0 7.5px;
-        background-size: 100% 100%;
+        width: 200px;
+        height: 200px;
+        margin: 0 20px 0 10px;   
     }
 
     .man-texting {
-        width: 164px;
-        height: 156px;
-        background-size: 100% 100%;
+        width: 200px;
+        height: 200px;
     }
 
-    .mini-title {
-        height: 26px;
-        margin: 0 auto 18px;
+    .description{
+        width: 540px;
+        height: 240px;
+        margin: 0 auto;
     }
 
     .description>h2 {
-        width: 573px;
+        width: 445px;
         height: 88px;
+        text-align: center;
+        font-size: 2.5rem;
+        line-height: 2.75rem;
         margin: 0 auto 32px;
-    }
+    } 
 
     .mini-description {
-        width: 525px;
+        width: 540px;
         height: 78px;
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 26px;
-        text-align: center;
-        margin: 0 auto 72px;
+        font-size: 1.12rem;
+        line-height: 1.63rem;
     }
 
+     /* Footer */
 
-
-    /* Footer */
-
-    #footer {
-        position: relative;
-        height: 308px;
-        width: 100%;
-        margin-top: 26px;
-    }
-
-    .footer-info {
-        width: 900px;
-        margin: 116px auto 104px;
-
-    }
-
-    .footer-header {
-        width: 333.5px;
-        margin: 0;
-    }
-
-    .footer-header>h2 {
-        color: #FAFAFA;
-        width: 333.5px;
-        height: 88px;
-        text-align: left;
-        margin-right: 0;
-    }
-
-    .footer-description {
-        margin: 0 20px;
-        width: 333.5px;
-
-    }
-
-    .footer-description>p {
-        color: #FAFAFA;
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 26px;
-        width: 250px;
-
-    }
-
-    .footer-download {
-        width: 193px;
-        height: 58px;
-        margin: 0;
-    }
-
-    .footer-download>button {
-        background-color: #855FB1;
-    }
-
-    .footer-span {
-        color: #D9B8FF;
-    }
-
-    .footer-download>button:hover {
-        background-color: #b18bdd;
-    }
+#footer {
+    background: url(assets/desktop/image-footer.jpg) no-repeat;
+    background-color: #4D96A9;
+    background-blend-mode: multiply;
+    width: 100%;
+    height: 308px;
+    margin-top: -130px;
+    background-size: 100% 100%;
 }
 
-/* X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-    body {
-        overflow-x: hidden;
-    }
+.footer-info {
+    width: 900px;
+    height: 88px;
+    margin: 116px auto 104px;
+}
+
+.footer-header>h2 {
+    width: 350px;
+    height: 88px;
+    font-size: 2.1rem;
+    line-height: 2.75rem;
+    text-align: left;
+}
+
+.footer-description{
+    width: 350px;
+}
+
+.footer-description>p {
+    width: 350px;
+    font-size: 1rem;
+    line-height: 1.53rem;
+    text-align: left;
+}
+
+.footer-download {
+    margin: 0 0 0 30px;
+}
+}
+
+ /*Extra Large Devices min-width: 1200px and max-width: 1399.98px) */
+@media (min-width: 1200px) and (max-width: 1399.98px)  {
 
     /* Header */
-    #header {
-        margin-bottom: 122px;
+    #header{
+        height: 482px;
     }
+    
 
-    #logo {
-        width: 119px;
-        height: 28px;
-        margin: 80px auto 60px;
+    .information{
+        width: 100%;
+        height: 358px;
     }
-
-
-    .hero-center {
+    .hero-center{
         display: none;
     }
 
-    .hero-left {
-        width: 33.33%;
-        height: 303px;
-        padding-left: 0;
-        background-size: 80%;
+    .hero-left{
+        width: 30%;
+        background: url(assets/desktop/image-hero-left.png) no-repeat;
+        background-size: 90% 70%;
     }
 
-    .hero-right {
-        width: 33.33%;
-        height: 303px;
-        padding-right: 0;
+    .hero-right{
+        width: 30%;
+        background: url(assets/desktop/image-hero-right.png) no-repeat;
+        background-size: 90% 70%;
         background-position: right;
-        margin-top: 43px;
-        background-size: 80%;
+        margin-top: 5px;
     }
 
-    .content {
-        width: 33.34%;
-        height: 304px;
-        margin: 0px;
-        text-align: center;
-        padding-top: 43px;
+    .content{
+        width: 450px;
+        height: 304px; 
+        margin-top: 40px;  
     }
 
-    .content>h1 {
-        font-weight: 900;
-        font-size: 58px;
-        line-height: 58px;
-        width: 400px;
-        height: 128;
-        margin: 0 auto 34px;
+    .content-p {
+        width: 450px;
+        font-size: 1.03rem;
+        line-height: 1.63rem;
     }
 
-    .content>p {
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 26px;
-        width: 457px;
-        height: 52px;
-        text-align: center;
-        margin: 0 auto 32px;
-    }
-
-    .buttons{
+    .buttons {
         display: flex;
         flex-direction: row;
-    }
-    .download {
-        background-color: #4D96A9;
-        margin: 0;
-    }
-
-    .download:hover {
-        background-color: #71C0D4;
+        width: 348px;
+        height: 58px;
     }
 
     .info-btn {
-        margin: 0 0 0 25px;
+        margin: 0 0 0 16px;
     }
-
-    .info-btn:hover {
-        background-color: #B18BDD;
-    }
-
-    /* Division Section */
-
-    .circle-1>p,
-    .circle-2>p {
-        font-size: 18px;
-        line-height: 26px;
-        text-align: center;
-        margin: 14px 0 0 0;
-
-    }
-
-    /* Division section */
 
     .division {
-        width: 56px;
-        margin: 0 auto;
-    }
-
-    .line {
-        border-left: 1px solid #87879D;
-        height: 84px;
-        opacity: 0.25;
-        margin: 0 50%;
-    }
-
-    .circle-1 {
-        margin: 0 0 80px 0;
-    }
-
-    .circle-1,
-    .circle-2 {
-        border: 1px solid rgba(135, 135, 157, 0.25);
-        border-radius: 29px;
-        width: 56px;
-        height: 56px;
-
-    }
-
-    .circle-2 {
-        margin: 0 0 -30px 0;
-        background-color: #FFFFFF;
-        z-index: 10;
-        position: absolute;
+        margin: 100px auto;
     }
 
     /* Section */
 
+    #section {
+        width: 1050px;
+        height: 562px;
+        margin: 0 auto;
+    }
+
     .group-imgs {
+        width: 1050px;
         height: 242px;
-        width: 1110px;
-        margin: 0 auto 80px;
+        margin-bottom: 70px;
     }
 
     .woman-videocall {
-        width: 255px;
+        width: 245px;
         height: 242px;
-        background-size: 100% 100%;
+        margin: 0 6px 0 0;
+       
     }
 
     .women-videochatting {
-        width: 255px;
+        width: 245px;
         height: 242px;
-        margin: 0 15px 0 30px;
-        background-size: 100% 100%;
+        margin: 0 6px 0 6px;
     }
 
     .men-meeting {
-        width: 255px;
+        width: 245px;
         height: 242px;
-        margin: 0 30px 0 15px;
-        background-size: 100% 100%;
+        margin: 0 12px 0 6px;   
     }
 
     .man-texting {
-        width: 255px;
+        width: 245px;
         height: 242px;
-        background-size: 100% 100%;
     }
 
-    .mini-title {
-        height: 26px;
-        margin: 0 auto 18px;
+    .description{
+        width: 540px;
+        height: 240px;
+        margin: 0 auto;
     }
 
     .description>h2 {
-        width: 422px;
+        width: 445px;
         height: 88px;
+        text-align: center;
+        font-size: 2.5rem;
+        line-height: 2.75rem;
         margin: 0 auto 32px;
-    }
+    } 
 
     .mini-description {
-        width: 573px;
+        width: 540px;
         height: 78px;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 26px;
+        font-size: 1.13rem;
+        line-height: 1.63rem;
         text-align: center;
-        margin: 0 auto 72px;
     }
-
-    /* Footer */
 
     #footer {
-        background: url(assets/desktop/image-footer.jpg);
+        background: url(assets/desktop/image-footer.jpg) no-repeat;
         background-color: #4D96A9;
         background-blend-mode: multiply;
-        position: relative;
-        height: 308px;
         width: 100%;
-        margin-top: 26px;
+        height: 308px;
+        margin-top: -130px;
+        background-size: 100% 100%;
     }
-
+    
     .footer-info {
         width: 1000px;
-        /* margin: 116px auto 104px; */
-
-    }
-
-    .footer-header {
-        width: 350px;
-    }
-
-    .footer-header>h2 {
-        color: #FAFAFA;
-        width: 400px;
         height: 88px;
+        margin: 116px auto 104px;
+    }
+    
+    .footer-header>h2 {
+        width: 350px;
+        height: 88px;
+        font-size: 2.1rem;
+        line-height: 2.75rem;
         text-align: left;
     }
-
-    .footer-description {
-        width: 400px;
-        margin: 0 0 0 44px;
-
-    }
-
-    .footer-description>p {
-        color: #FAFAFA;
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 26px;
-        margin: 0;
+    
+    .footer-description{
         width: 350px;
     }
-
+    
+    .footer-description>p {
+        width: 350px;
+        font-size: 1rem;
+        line-height: 1.53rem;
+        text-align: left;
+    }
+    
     .footer-download {
-        width: 193px;
-        height: 58px;
-        margin: 0;
+        margin: 0 0 0 60px;
     }
 
-    .footer-download>button {
-        background-color: #855FB1;
-    }
-
-    .footer-span {
-        color: #D9B8FF;
-    }
-
-    .footer-download>button:hover {
-        background-color: #b18bdd;
-    }
 }
 
-/* XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) {
-    body {
-        background-color: #000000;
-        overflow-x: hidden;
-    }
-
-    .container-fluid {
-        width: 1440px;
-        background-color: #FAFAFAFA;
-    }
-
+ /* Extra extra Large Devices min-width: 1400px and up)  */
+@media (min-width: 1200px) {
+    
     /* Header */
-    #header {
-        margin-bottom: 122px;
+    #header{
+        height: 482px;
     }
 
-    #logo {
-        width: 119px;
-        height: 28px;
-        margin: 80px auto 60px;
+    .information{
+        width: 1504px;
+        height: 358px;
     }
 
-
-    .hero-center {
+    .hero-center{
         display: none;
     }
 
-    .hero-left {
-        width: 33.33%;
-        height: 303px;
-        padding-left: 0;
+    .hero-left{
+        width: 400px;
+        background: url(assets/desktop/image-hero-left.png) no-repeat;
+        background-size: 100% 90%;
     }
 
-    .hero-right {
-        width: 33.33%;
-        height: 303px;
-        padding-right: 0;
+    .hero-right{
+        width: 400px;
+        background: url(assets/desktop/image-hero-right.png) no-repeat;
+        background-size: 100% 90%;
         background-position: right;
-        margin-top: 43px;
+        margin-top: 40px;
     }
 
-    .content {
-        width: 33.34%;
-        height: 304px;
-        margin: 0px;
-        text-align: center;
-        padding-top: 43px;
+    .content{
+        width: 540px;
     }
 
-    .content>h1 {
-        font-weight: 900;
-        font-size: 64px;
-        line-height: 64px;
+    .content>h1{
         width: 445px;
-        height: 128;
-        margin: 0 auto 34px;
+        height: 128px;
+        font-size: 4rem;
+        line-height: 4rem;
+        padding: 0;
+        margin: 40px auto 32px;
     }
 
-    .content>p {
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 26px;
+    .content-p{
         width: 540px;
         height: 52px;
-        text-align: center;
-        margin: 0 auto 32px;
+        font-size: 1.13rem;
+        line-height: 1.63rem;
+        padding: 0;
+        margin-bottom: 32px;
     }
 
     .buttons{
         display: flex;
         flex-direction: row;
+        width: 348px;
+        height: 58px;
     }
 
-    .download {
-        background-color: #4D96A9;
-        margin: 0;
+    .download{
+        width: 193px;
+        height: 58px;
     }
 
-    .download:hover {
-        background-color: #71C0D4;
+    .info-btn{
+        margin: 0 0 0 16px;
+        width: 139px;
+        height: 58px;
     }
 
-    .info-btn {
-        margin: 0 0 0 25px;
-
-    }
-
-    .info-btn:hover {
-        background-color: #B18BDD;
-    }
-
-    /* Division Section */
-
-    .circle-1>p,
-    .circle-2>p {
-        font-size: 18px;
-        line-height: 26px;
-        text-align: center;
-        margin: 14px 0 0 0;
-
-    }
-
-    /* Division section */
+    /* Division */
 
     .division {
-        width: 56px;
-        margin: 0 auto;
-    }
-
-    .line {
-        border-left: 1px solid #87879D;
-        height: 84px;
-        opacity: 0.25;
-        margin: 0 50%;
-    }
-
-    .circle-1 {
-        margin: 0 0 80px 0;
-    }
-
-    .circle-1,
-    .circle-2 {
-        border: 1px solid rgba(135, 135, 157, 0.25);
-        border-radius: 29px;
-        width: 56px;
-        height: 56px;
-    }
-
-    .circle-2 {
-        margin: 0 0 -30px 0;
-        background-color: #FFFFFF;
-        z-index: 10;
-        position: absolute;
+        margin: 110px auto;
     }
 
     /* Section */
 
-    .group-imgs {
-        height: 242px;
-        width: 1110px;
-        margin: 0 auto 80px;
+    #section{
+        height: 562px;
+        width: 1100px;
     }
 
-    .woman-videocall {
+    .group-imgs{
+        width: 1100px;
+        height: 242px;
+        margin-bottom: 80px;
+    }
+
+    .woman-videocall, .women-videochatting, .men-meeting, .man-texting{
         width: 255px;
         height: 242px;
-        background-size: 100% 100%;
     }
 
-    .women-videochatting {
-        width: 255px;
-        height: 242px;
-        margin: 0 15px 0 30px;
-        background-size: 100% 100%;
-    }
-
-    .men-meeting {
-        width: 255px;
-        height: 242px;
-        margin: 0 30px 0 15px;
-        background-size: 100% 100%;
-    }
-
-    .man-texting {
-        width: 255px;
-        height: 242px;
-        background-size: 100% 100%;
-    }
-
-    .mini-title {
-        height: 26px;
-        margin: 0 auto 18px;
-    }
-
-    .description>h2 {
-        width: 422px;
-        height: 88px;
-        margin: 0 auto 32px;
-    }
-
-    .mini-description {
-        width: 525px;
-        height: 78px;
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 26px;
-        text-align: center;
-        margin: 0 auto 72px;
-    }
-
-
-
-    /* Footer */
-
-    #footer {
-        background: url(assets/desktop/image-footer.jpg);
-        background-color: #4D96A9;
-        background-blend-mode: multiply;
-        position: relative;
-        height: 308px;
-        width: 1440px;
-        margin-top: 26px;
-        background-size: 100% 100%;
-    }
-
-    .footer-info {
-        width: 1110px;
-        margin: 116px auto 104px;
-
-    }
-
-    .footer-header {
+    .woman-videocall{
         margin: 0;
     }
-
-    .footer-header>h2 {
-        color: #FAFAFA;
-        width: 350px;
-        height: 88px;
-        text-align: left;
+    .women-videochatting{
+        margin: 0 25px;
     }
 
-    .footer-description {
-        margin: 0 30px;
-
+    .men-meeting{
+        margin-right: 30px;    
     }
 
-    .footer-description>p {
-        color: #FAFAFA;
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 26px;
-        width: 350px;
-        text-align: left;
-    }
-
-    .footer-download {
-        width: 193px;
-        height: 58px;
+    .description{
+        width: 540px;
+        height: 240px;
         margin: 0 auto;
     }
 
-    .footer-download>button {
-        background-color: #855FB1;
+    .description>h2{
+        margin: 0 auto 32px;
+    }
+    
+    .mini-description{
+        width: 540px;
+        height: 78px;
+        font-size: 1.13rem;
+        height: 1.625rem;
     }
 
-    .footer-span {
-        color: #D9B8FF;
+    #footer {
+        background: url(assets/desktop/image-footer.jpg) no-repeat;
+        background-color: #4D96A9;
+        background-blend-mode: multiply;
+        width: 1440px;
+        height: 308px;
+        margin-top: -140px;
+        background-size: 100% 100%;
+    }
+    
+    .footer-info {
+        width: 1110px;
+        height: 88px;
+        margin: 116px auto 104px;
+    }
+
+    .footer-header{
+        width: 350px;
+        height: 88px;
+    }
+    
+    .footer-header>h2 {
+        font-size: 2.5rem;
+        line-height: 2.75rem;
+        text-align: left;
+    }
+    
+    .footer-description{
+        width: 350px;
+    }
+
+    .footer-description{
+        margin: 0 92px 0 125px;
+    }
+    
+    .footer-description>p {
+        width: 350px;
+        font-size: 1.125rem;
+        line-height: 1.625rem;
+        text-align: left;
+        
+    }
+    
+    .footer-download {
+        margin: 0 0 0 0px;
+    }
+
+    .download:hover{
+        background-color: #71C0D4;
+        color: #FFFFFF;
+    }
+
+    .info-btn:hover{
+        background-color: #B18BDD;
+        color: #FFFFFF;
     }
 
     .footer-download>button:hover {
         background-color: #b18bdd;
     }
+
+
 }
